@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 300px;
+  background: #fcf8d9;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  z-index: -1;
+}
+.card .title {
+  font-family: "Oswald", sans-serif;
+  color: #5cb85c;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 0;
+}
+.card p {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  color: #54503f;
+}
+.masjid {
+  display: flex;
+  justify-content: center;
+}
+.kubah-tiang:first-child,
+.kubah-tiang:last-child {
+  transform: scale(0.75);
+  padding: 0;
+  margin: -15px;
+  margin-top: 25px;
+  z-index: -999;
+}
+.kubah-tiang {
+  width: 100px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bulan {
+  width: 35px;
+  height: 35px;
+  background: #fcf8d9;
+  border-radius: 50%;
+  box-shadow: inset 8px -5px 0 3px #767956;
+  position: relative;
+}
+.kubah {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+  background-color: #5cb85c;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.tiang {
+  width: 100px;
+  height: 120px;
+  background: #e0c769;
+  border-top: 8px solid #54503f;
+  margin-top: -10px;
+  position: relative;
+}
+.tiang::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  background: #54503f;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
